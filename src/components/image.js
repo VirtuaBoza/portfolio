@@ -1,6 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { css } from "@emotion/core";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
+import React from "react";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -24,9 +25,22 @@ const Image = () => {
         }
       }
     }
-  `)
+  `);
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-}
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      css={css`
+        border-radius: 50%;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+      `}
+    />
+  );
+};
 
-export default Image
+export default Image;
