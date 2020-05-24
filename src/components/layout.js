@@ -51,9 +51,7 @@ const Layout = ({ children }) => {
           }
           p {
             text-align: justify;
-            &:not(:last-of-type) {
-              margin-bottom: 1rem;
-            }
+            margin-bottom: 1rem;
           }
           a {
             text-decoration: underline;

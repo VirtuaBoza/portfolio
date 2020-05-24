@@ -27,13 +27,14 @@ const Header = ({ siteTitle }) => (
     <div
       css={css`
         flex-grow: 1;
+        max-width: 1100px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
         @media (min-width: 768px) {
           display: flex;
           align-items: baseline;
           justify-content: space-between;
-          max-width: 1100px;
-          padding-left: 2rem;
-          padding-right: 2rem;
         }
       `}
     >
