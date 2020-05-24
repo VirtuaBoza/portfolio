@@ -49,6 +49,15 @@ const Layout = ({ children }) => {
             font-family: Lora;
             font-style: oblique;
           }
+          p {
+            text-align: justify;
+            &:not(:last-of-type) {
+              margin-bottom: 1rem;
+            }
+          }
+          a {
+            text-decoration: underline;
+          }
         `}
       />
       <div
@@ -70,8 +79,8 @@ const Layout = ({ children }) => {
             css={css`
               flex-grow: 1;
               max-width: 1000px;
-              padding-left: 4rem;
-              padding-right: 4rem;
+              padding-left: 3rem;
+              padding-right: 3rem;
             `}
           >
             {children}
