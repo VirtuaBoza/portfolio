@@ -38,31 +38,53 @@ const WritingsPage = () => {
           css={css`
             text-decoration: none;
             display: flex;
-            flex-direction: row;
             margin-top: 2rem;
+            flex-direction: column;
           `}
         >
-          <div
+          <h2
             css={css`
-              margin-right: 2rem;
+              margin-top: 0px;
             `}
           >
-            <h2
+            {p.title}
+          </h2>
+          <div
+            css={css`
+              display: flex;
+              flex-direction: column;
+              @media (min-width: 768px) {
+                flex-direction: row;
+              }
+            `}
+          >
+            <div
               css={css`
-                margin-top: 0px;
+                margin-right: 2rem;
+                flex: 1;
               `}
             >
-              {p.title}
-            </h2>
-            <p>{p.firstPublishedAt}</p>
-            <p>{p.previewContent.subtitle}</p>
+              <p>{p.firstPublishedAt}</p>
+              <p>{p.previewContent.subtitle}</p>
+            </div>
+            <div
+              css={css`
+                flex: 1;
+              `}
+            >
+              <img
+                width="700"
+                height="210"
+                srcSet={[276, 552, 640, 700].reduce(
+                  (acc, cur) =>
+                    `${acc} https://miro.medium.com/fit/c/${cur}/210/${p.virtuals.previewImage.imageId} ${cur}w,`,
+                  ""
+                )}
+                sizes="700px"
+                src={`https://miro.medium.com/fit/c/700/210/${p.virtuals.previewImage.imageId}`}
+              />
+            </div>
           </div>
-          <img
-            width="700"
-            height="210"
-            sizes="700px"
-            src={`https://miro.medium.com/fit/c/276/210/${p.virtuals.previewImage.imageId}`}
-          />
         </a>
       ))}
     </Layout>
