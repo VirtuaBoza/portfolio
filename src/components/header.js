@@ -60,13 +60,10 @@ const Header = ({ siteTitle }) => (
           justify-content: space-around;
         `}
       >
-        {/* <NavLink to="/projects" activeStyle={activeNavStyle}>
-          Projects
-        </NavLink> */}
-        <NavLink to="/talks" activeStyle={activeNavStyle}>
+        <NavLink to="/talks/" activeStyle={activeNavStyle}>
           Talks
         </NavLink>
-        <NavLink to="/writings" activeStyle={activeNavStyle}>
+        <NavLink to="/writings/" activeStyle={activeNavStyle}>
           Writings
         </NavLink>
       </nav>

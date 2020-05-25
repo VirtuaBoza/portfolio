@@ -1,5 +1,6 @@
 import { css } from "@emotion/core";
 import { graphql, useStaticQuery } from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 import * as React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -32,7 +33,7 @@ const WritingsPage = () => {
     <Layout>
       <SEO title="Writings" />
       {posts.map((p) => (
-        <a
+        <OutboundLink
           key={p.medium_id}
           href={`https://medium.com/@VirtuaBoza/${p.slug}-${p.medium_id}`}
           css={css`
@@ -85,7 +86,7 @@ const WritingsPage = () => {
               />
             </div>
           </div>
-        </a>
+        </OutboundLink>
       ))}
     </Layout>
   );
