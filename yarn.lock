@@ -6240,6 +6240,11 @@ gatsby-source-filesystem@^2.3.4:
     valid-url "^1.0.9"
     xstate "^4.9.1"
 
+gatsby-source-gravatar@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-gravatar/-/gatsby-source-gravatar-1.0.0.tgz#3d7564eb72d167dd58f39703aefb35cf4b02f252"
+  integrity sha512-pN48dBm1oinhhrtypdOOgRu0nO3ZPARdZYKdTwIm8Pyfql1BbHUHwLfYf8E14SFkthHkUnXLh63q/qiQIGvqbw==
+
 gatsby-source-medium@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.3.2.tgz#a7e8d6ba293d13abf6faa5d686cdda731740542f"

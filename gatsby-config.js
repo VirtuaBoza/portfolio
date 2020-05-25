@@ -43,6 +43,21 @@ module.exports = {
         username: `@VirtuaBoza`,
       },
     },
+    {
+      resolve: `gatsby-source-gravatar`,
+      options: {
+        // Required.
+        // A list of emails to create URLs for.
+        emails: [`andrew.m.boza@gmail.com`],
+
+        // Optional.
+        // No query string is passed to gravatar by default.
+        // But you can add your gravatar query parameters here.
+        // See https://en.gravatar.com/site/implement/images/
+        // If this is set, it will be the default for `emails` (see above) with no `query` options.
+        query: `?size=248`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -21,6 +21,7 @@
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sharp": "^2.6.4",
     "gatsby-source-filesystem": "^2.3.4",
+    "gatsby-source-gravatar": "^1.0.0",
     "gatsby-source-medium": "^2.3.2",
     "gatsby-transformer-sharp": "^2.5.2",
     "prop-types": "^15.7.2",
