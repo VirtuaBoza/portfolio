@@ -56,6 +56,9 @@ const Layout = ({ children }) => {
           a {
             text-decoration: underline;
           }
+          ul {
+            margin-bottom: 0.5rem;
+          }
         `}
       />
       <div
